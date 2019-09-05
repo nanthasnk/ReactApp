@@ -1,5 +1,5 @@
-import react, { Component } from 'react';
-import {Media} from reactStrap;
+import React, { Component } from 'react';
+import { Media } from 'reactstrap';
 
 class Menu extends Component{
 
@@ -53,7 +53,7 @@ class Menu extends Component{
                     <Media tag = "li">
                         <Media left middle>
                             <Media object src={dish.image} alt={dish.name} />
-                            </Media>
+                        </Media>
                             <Media body className="ml-5">
                                 <Media heading>{dish.name}</Media>
                                 <p>{dish.description}</p>
@@ -67,11 +67,12 @@ class Menu extends Component{
             <div className = "container">
                 <div className = "row">
                     <Media list>
-                        {menu};
+                        {menu}
                     </Media>
                 </div>
-
             </div>
         );
     }
 }
+
+export default Menu;
