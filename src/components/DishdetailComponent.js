@@ -3,15 +3,25 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 class DishDetail extends Component {
 
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
 
+    // }
+
+    componentDidMount(){
+        console.log('Dish detail component componentDidMount invoked ')
+    }
+
+    componentDidUpdate(){
+        console.log('Dish detail component componentDidUpdate invoked')
     }
 
     /*
     renderDish method displays the selected dish in card format
     */
     renderDish(dish) {
+        console.log('Dish detail component render invoked')
+ 
         if (dish != null)
             return (
                 <div className="col-12 col-md-5 m-1">
